@@ -1,0 +1,6 @@
+@MSBuildForContainers.ApiApp_HostAddress = http://localhost:5050
+
+GET {{MSBuildForContainers.ApiApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
