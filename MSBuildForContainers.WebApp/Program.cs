@@ -3,13 +3,18 @@ using MSBuildForContainers.WebApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(http => http.BaseAddress = new Uri("https://localhost:5051/"));
+// builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(http => http.BaseAddress = new Uri("https://localhost:5051/"));
+builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(http => http.BaseAddress = new Uri("https+http://apiapp"));
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

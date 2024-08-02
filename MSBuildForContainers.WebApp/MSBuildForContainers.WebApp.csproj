@@ -5,4 +5,8 @@
     <ContainerImageTag>latest</ContainerImageTag>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MSBuildForContainers.ServiceDefaults\MSBuildForContainers.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

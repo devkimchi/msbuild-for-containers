@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>8b51c779-7ef3-4943-a8e8-84134faf116e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="$(AspireVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSBuildForContainers.ApiApp\MSBuildForContainers.ApiApp.csproj" />
+    <ProjectReference Include="..\MSBuildForContainers.WebApp\MSBuildForContainers.WebApp.csproj" />
+  </ItemGroup>
+
+</Project>

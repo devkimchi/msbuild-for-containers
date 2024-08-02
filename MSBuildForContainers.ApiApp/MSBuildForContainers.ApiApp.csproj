@@ -10,4 +10,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="$(SwashbuckleVersion)" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MSBuildForContainers.ServiceDefaults\MSBuildForContainers.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

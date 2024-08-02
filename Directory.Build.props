@@ -6,5 +6,11 @@
 
     <MicrosoftAspNetCoreVersion>8.*</MicrosoftAspNetCoreVersion>
     <SwashbuckleVersion>6.*</SwashbuckleVersion>
+
+    <AspireVersion>8.*</AspireVersion>
+    <MicrosoftExtensionsVersion>8.*</MicrosoftExtensionsVersion>
+    <OpenTelemetryExporterVersion>1.*</OpenTelemetryExporterVersion>
+    <OpenTelemetryExtensionsVersion>1.*</OpenTelemetryExtensionsVersion>
+    <OpenTelemetryInstrumentationVersion>1.*</OpenTelemetryInstrumentationVersion>
   </PropertyGroup>
 </Project>
