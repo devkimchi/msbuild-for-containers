@@ -1,0 +1,22 @@
+services:
+  apiapp:
+    container_name: "apiapp"
+    image: "apiapp:latest"
+    environment:
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+      HTTP_PORTS: "8080"
+    ports:
+    - target: 8080
+      published: 5050
+    restart: unless-stopped
+  webapp:
+    container_name: "webapp"
+    image: "webapp:latest"
+    environment:
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+      HTTP_PORTS: "8080"
+      services__apiapp__http__0: "http://apiapp:8080"
+    ports:
+    - target: 8080
+      published: 3000
+    restart: unless-stopped

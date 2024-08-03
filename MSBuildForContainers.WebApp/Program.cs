@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(http => http.BaseAddress = new Uri("https://localhost:5051/"));
+// builder.Services.AddHttpClient<IApiAppClient, ApiAppClient>(http => http.BaseAddress = new Uri("http://apiapp:8080/"));
 
 var app = builder.Build();
 

@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <!-- <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0-noble-chiseled</ContainerBaseImage> -->
     <ContainerRepository>webapp</ContainerRepository>
     <ContainerImageTag>latest</ContainerImageTag>
   </PropertyGroup>
