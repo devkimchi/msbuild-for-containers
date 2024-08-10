@@ -1,6 +1,8 @@
 # MSBuild for Containers
 
-This provides sample .NET apps using container images with Dockerfile, with MSBuild, and with .NET Aspire support.
+As a .NET developer, when you build a container image for your app, you can use the `Dockerfile` to define the container image. However, you can also use the `dotnet publish` command to build and publish the container image without a `Dockerfile`. This repository provides sample .NET apps using container images with `Dockerfile` and with `dotnet publish`.
+
+In addition to that, if you want to orchestrate containers Docker Compose is usually the first approach. However, you can also use the .NET Aspire to generate the Docker Compose file from the .NET Aspire manifest JSON file. This repository also provides a sample .NET app using the .NET Aspire to orchestrate containers.
 
 ## Prerequisites
 
